@@ -41,15 +41,15 @@
                         //Server settings
                         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
                         $mail->isSMTP();                                            //Send using SMTP
-                        $mail->Host       = 'mail.shamskhan.xyz';                     //Set the SMTP server to send through
+                        $mail->Host       = 'mail.yourhost.xyz';                     //Set the SMTP server to send through
                         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                        $mail->Username   = 'hello@shamskhan.xyz';                     //SMTP username
-                        $mail->Password   = '&![?~V7B@Wi4';                               //SMTP password
+                        $mail->Username   = 'hello@yourhost.xyz';                     //SMTP username
+                        $mail->Password   = 'yourhostpass';                               //SMTP password
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
                         //Recipients
-                        $mail->setFrom('hello@shamskhan.xyz');
+                        $mail->setFrom('hello@yourhost.xyz');
                         $mail->addAddress($email);
 
                         //Content
